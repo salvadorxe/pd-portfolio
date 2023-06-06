@@ -1,0 +1,132 @@
+*{
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+}
+body{
+    max-width: 100%;
+    background-color: #F7F7F2;
+    color: #262626;
+    overflow: hidden;
+}
+#header{
+    padding: 10px 20px;
+    
+}
+.logo{
+    height: 33px;
+    width: 130px;
+    padding-left: 15px;
+}
+nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+nav ul li{
+    display: inline-block;
+    list-style: none;
+    margin: 10px 50px;
+}
+
+nav ul li a{
+    color: #262626;
+    letter-spacing: -1px;
+    text-decoration: none;
+    font-size: 18px;
+}
+
+nav ul li a:hover{
+    color:#EB5160;
+    transition: 0.3s;
+}
+
+.header-text{
+    margin-top: 50px;
+    width: 1000px;
+}
+.header-text span {
+    color: #EB5160;
+}
+.header-text h1 {
+    font-size: 50px;
+    margin: 0px 0px;
+    letter-spacing: -1px;
+    padding: 1px;
+}
+.header-subtext{
+    margin-top: 25px;
+    width: 500px;
+}
+.header-subtext p{
+    width: 500px;
+    letter-spacing: -0.5px;
+}
+#pd {
+    color: #262626;
+    position: relative;
+}
+#pd::after{
+    content: '';
+    height: 2.5px;
+    background: #450920;
+    position: absolute;
+    left: 0;
+    bottom: -2.5px;
+    width: 0%;
+    z-index: -1;
+    transition: all 0.3s;
+    transform-origin: 0% 100%;
+}
+#pd:hover{
+    color: #F7F7F2;
+    transition: all 0.6s;
+}
+#pd:hover::after{
+    width: 101%;
+    transform: scaleY(25);
+    transition: all 0.5s;
+}
+
+#works{
+    padding: 50px 20px;
+    overflow: hidden;
+}
+
+#works .sec-header{
+    white-space: nowrap;
+}
+
+#works .sec-header p{
+    font-size: 30px;
+    color:#262626;
+    font-weight: bold;
+    margin-bottom: 0;
+}
+
+#works .anim{
+    animation: anim 10s infinite linear;
+}
+
+@keyframes anim{
+    from{
+        transform: translateX(0%);
+    }
+    to {
+        transform: translateX(-50%);
+    }
+}
+
+.works-col{
+    padding: 50px 40px;
+    display: block;
+    margin-right: auto;
+    margin-left: auto;
+    width: 70%;
+}
+.works-col div{
+    max-width: 70vw;
+    min-width: 70vw;
+    height: 110px;
+    border: 1px solid #450920;
+    margin-bottom: 10px;
+}
