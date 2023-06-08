@@ -13,7 +13,7 @@ body{
     
 }
 .logo{
-    height: 33px;
+    height: 35px;
     width: 130px;
     padding-left: 15px;
 }
@@ -96,6 +96,7 @@ nav ul li a:hover{
 
 #works .sec-header{
     white-space: nowrap;
+    padding-bottom: 50px;
 }
 
 #works .sec-header p{
@@ -121,28 +122,42 @@ nav ul li a:hover{
 .works-col{
     padding: 50px 125px;
     display: block;
-    margin-right: auto;
-    margin-left: auto;
 }
-.works-col div{
-    max-width: 100vw;
-    min-width: 75vw;
+.works-col button{
+    background-color: #F7F7F2;
     height: 100px;
+    width: 70vw;
     border: 1px solid #450920;
     margin-bottom: 10px;
     display: flex;
     justify-content: space-between;
     align-items: center;
+    cursor: pointer;
+    margin-right: auto;
+    margin-left: auto;
 }
 
-.works-col div span{
+.works-col button:hover{
+    transition: 0s;
+    background-color: #450920;
+    border-radius: 100px;
+}
+
+.works-col button:hover > span, .works-col button:hover > span #pr-name{
+    color:#F7F7F2;
+}
+
+.works-col button span{
     color: #EB5160;
     margin: 0px 30px;
     font-weight:lighter;
     font-size: 25px;
+    max-width: 200px;
+    display: inline-block;
 }
 
-.works-col div span #pr-name{
+.works-col button span #pr-name{
+    color: #EB5160;
     margin: 0px 0px;
     font-weight: bold;
 }
@@ -156,4 +171,24 @@ nav ul li a:hover{
     width: 600px;
     letter-spacing: -0.5px;
     line-height: 1.35;
+}
+.proj-cover{
+    position: relative;
+    object-fit: cover;
+    height: 250px;
+    width: 250px;
+    left: 5px;
+    border-radius: 20px;
+    display: none;
+    border: 1px solid #450920;
+}
+
+.works-col button:hover .proj-cover{
+    display: block;
+}
+
+@media only screen and (max-width: 800px) {
+    .works-col button:hover .proj-cover{
+        display: none;
+    }
 }
