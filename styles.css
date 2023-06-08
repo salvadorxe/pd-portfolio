@@ -22,6 +22,12 @@ nav{
     align-items: center;
     justify-content: space-between;
 }
+#sticky {
+    background-color: #F7F7F2;
+    position: fixed;
+    top: 0;
+    width: 100%;
+  }
 nav ul li{
     display: inline-block;
     list-style: none;
@@ -125,8 +131,8 @@ nav ul li a:hover{
 }
 .works-col button{
     background-color: #F7F7F2;
-    height: 100px;
-    width: 70vw;
+    height: 80px;
+    width: 80vw;
     border: 1px solid #450920;
     margin-bottom: 10px;
     display: flex;
@@ -141,6 +147,7 @@ nav ul li a:hover{
     transition: 0s;
     background-color: #450920;
     border-radius: 100px;
+    transition: 0.1s;
 }
 
 .works-col button:hover > span, .works-col button:hover > span #pr-name{
