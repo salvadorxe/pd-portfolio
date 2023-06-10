@@ -10,7 +10,7 @@ body{
 }
 .logo{
     height: 35px;
-    width: 130px;
+    width: 90px;
     padding-left: 15px;
 }
 nav{
@@ -24,6 +24,10 @@ nav{
 }
 nav ul{
     padding-right: 50px;
+}
+#header .container{
+    margin-bottom: 100px;
+    flex-basis: 10%;
 }
 #sticky {
     background-color: #F7F7F2;
@@ -54,8 +58,9 @@ nav ul li a:hover{
 
 .header-text{
     margin-top: 200px;
-    width: 1000px;
+    width: 50vw;
     padding: 10px 20px;
+    white-space: nowrap;
 }
 .header-text span {
     color: #EB5160;
@@ -68,7 +73,6 @@ nav ul li a:hover{
 }
 .header-subtext{
     margin-top: 25px;
-    margin-bottom: 125px;
     width: 500px;
     padding: 0px 20px;
 }
@@ -210,12 +214,6 @@ nav ul li a:hover{
         transform: scale(1);
     }
 }
-
-@media only screen and (max-width: 800px) {
-    .works-col button:hover .proj-cover{
-        display: none;
-    }
-}
 #about{
     padding: 10px 20px;
     
@@ -238,3 +236,22 @@ hr{
     border-top: .5px solid #450920;
     margin: -10px;
   }
+
+  @media only screen and (max-width: 600px) {
+    .works-col button:hover .proj-cover{
+        display: none;
+    }
+    .works-col button span{
+        display: block;
+        text-align: left;
+    }
+    .header-text h1{
+        font-size: 34px;
+    }
+    #pd:hover::after{
+        transform: scaleY(17);
+    }
+    .header-subtext p{
+        width: 400px;
+    }
+}
