@@ -8,10 +8,6 @@ body{
     color: #262626;
     overflow-x: hidden;
 }
-#about{
-    padding: 10px 20px;
-    
-}
 .logo{
     height: 35px;
     width: 130px;
@@ -22,7 +18,12 @@ nav{
     align-items: center;
     justify-content: space-between;
     margin: 0px;
-    padding: 0;
+    padding: 0px 10px;
+    white-space:nowrap;
+
+}
+nav ul{
+    padding-right: 50px;
 }
 #sticky {
     background-color: #F7F7F2;
@@ -43,6 +44,7 @@ nav ul li a{
     letter-spacing: -1px;
     text-decoration: none;
     font-size: 18px;
+    text-transform: lowercase;
 }
 
 nav ul li a:hover{
@@ -51,7 +53,7 @@ nav ul li a:hover{
 }
 
 .header-text{
-    margin-top: 150px;
+    margin-top: 200px;
     width: 1000px;
     padding: 10px 20px;
 }
@@ -68,7 +70,7 @@ nav ul li a:hover{
     margin-top: 25px;
     margin-bottom: 125px;
     width: 500px;
-    padding: 10px 20px;
+    padding: 0px 20px;
 }
 .header-subtext p{
     width: 550px;
@@ -112,14 +114,14 @@ nav ul li a:hover{
 }
 
 #works .sec-header p{
-    font-size: 30px;
+    font-size: 42px;
     color:#262626;
     font-weight: bold;
     margin-bottom: 0;
 }
 
 #works .anim{
-    animation: anim 10s infinite linear;
+    animation: anim 6.5s infinite linear;
 }
 
 @keyframes anim{
@@ -130,15 +132,23 @@ nav ul li a:hover{
         transform: translateX(-50%);
     }
 }
+#works-header{
+    font-style: italic;
+    letter-spacing: 1.25px;
+    color: #EB5160;
+}
 
 .works-col{
-    padding: 50px 125px;
+    white-space: nowrap;
+    padding: 70px 0px;
+    margin: 0 auto;
     display: block;
+    width: 90vw;
 }
 .works-col button{
     background-color: #F7F7F2;
     height: 80px;
-    width: 80vw;
+    width: 100%;
     border: 1px solid #450920;
     margin-bottom: 10px;
     display: flex;
@@ -175,29 +185,30 @@ nav ul li a:hover{
     font-weight: bold;
 }
 
-.description{
-    margin-top: 25px;
-    margin-bottom: 125px;
-    width: 500px;
-}
-.description p{
-    width: 600px;
-    letter-spacing: -0.5px;
-    line-height: 1.35;
-}
 .proj-cover{
-    position: relative;
+    position: absolute;
+    left: 40%;
     object-fit: cover;
-    height: 250px;
-    width: 250px;
-    left: 5px;
-    border-radius: 20px;
+    height: 300px;
+    width: 350px;
+    border-radius: 50px;
     display: none;
     border: 1px solid #450920;
 }
 
 .works-col button:hover .proj-cover{
     display: block;
+    animation: fade_in_show 0.3s;
+}
+@keyframes fade_in_show {
+    0%{
+        opacity: 0;
+        transform: scale(0.7);
+    }
+    100%{
+        opacity: 1;
+        transform: scale(1);
+    }
 }
 
 @media only screen and (max-width: 800px) {
@@ -205,3 +216,25 @@ nav ul li a:hover{
         display: none;
     }
 }
+#about{
+    padding: 10px 20px;
+    
+}
+.row{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.about-col1{
+    flex-basis: 60%;
+}
+.sub-title{
+    font-size: 42px;
+}
+.about-col2{
+    flex-basis: 35%;
+}
+hr{
+    border-top: .5px solid #450920;
+    margin: -10px;
+  }
