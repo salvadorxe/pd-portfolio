@@ -4,7 +4,7 @@
 }
 body{
     max-width: 100%;
-    background-color: #F7F7F2;
+    background-color: #F4F1EB;
     color: #262626;
     overflow-x: hidden;
 }
@@ -30,7 +30,7 @@ nav ul{
     flex-basis: 10%;
 }
 #sticky {
-    background-color: #F7F7F2;
+    background-color: #F4F1EB;
     position: fixed;
     top: 0;
     width: 100%;
@@ -98,7 +98,7 @@ nav ul li a:hover{
     transform-origin: 0% 100%;
 }
 #pd:hover{
-    color: #F7F7F2;
+    color: #F4F1EB;
     transition: all 0.6s;
 }
 #pd:hover::after{
@@ -150,7 +150,7 @@ nav ul li a:hover{
     width: 90vw;
 }
 .works-col button{
-    background-color: #F7F7F2;
+    background-color: #F4F1EB;
     height: 80px;
     width: 100%;
     border: 1px solid #450920;
@@ -171,7 +171,7 @@ nav ul li a:hover{
 }
 
 .works-col button:hover > span, .works-col button:hover > span #pr-name{
-    color:#F7F7F2;
+    color:#F4F1EB;
 }
 
 .works-col button span{
