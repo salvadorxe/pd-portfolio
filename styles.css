@@ -1,5 +1,5 @@
 *{
-    font-family: 'Roboto', sans-serif;
+    font-family: 'Raleway', sans-serif;
     letter-spacing: -1px;
 }
 body{
@@ -17,7 +17,7 @@ nav{
     display: flex;
     align-items: center;
     justify-content: space-between;
-    margin: 0px;
+    margin: -10px;
     padding: 0px 10px;
     white-space:nowrap;
 
@@ -29,14 +29,6 @@ nav ul{
     margin-bottom: 100px;
     flex-basis: 10%;
 }
-#sticky {
-    background-color: #F4F1EB;
-    position: fixed;
-    top: 0;
-    width: 100%;
-    z-index: 9999;
-    margin: 0px;
-  }
 nav ul li{
     display: inline-block;
     list-style: none;
@@ -108,8 +100,8 @@ nav ul li a:hover{
 }
 
 #works{
-    padding: 50px 0px;
-    overflow: hidden;
+    height: auto;
+    padding: 100px 0px;
 }
 
 #works .sec-header{
@@ -215,43 +207,103 @@ nav ul li a:hover{
     }
 }
 #about{
-    padding: 10px 20px;
+    padding: 100px 0px;
+    width: 100vw;
+    height: auto;
+    background-color: #2C2C2C;
+    color: #EBFE96;
+    margin: -10px;
     
+}
+#about .container .row{
+    padding: 0px 100px;
 }
 .row{
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
+    
 }
 .about-col1{
-    flex-basis: 60%;
+    flex-basis: 45%;
+}
+.about-col1 div{
+    margin-top: 50px;
+    float: right;
+    width: 200px;
+    height: 350px;
+    border: 1px solid #fff;
+    border-radius: 50%;
 }
 .sub-title{
+    margin-top: 50px;
+    margin-bottom: 50px;
     font-size: 42px;
 }
 .about-col2{
-    flex-basis: 35%;
+    text-align: left;
+    width: 500px;
+    height: 500px;
+    flex-basis: 50%;
+}
+.about-col2 span{
+    display: inline-block;
+    width: 30vw;
+    font-size: 20px;
+    font-weight: thin;
+    line-height: 1.35;
+}
+.about-col2 p{
+    width: 30vw;
+    font-size: 20px;
 }
 hr{
     border-top: .5px solid #450920;
     margin: -10px;
-  }
-
-  @media only screen and (max-width: 600px) {
+}
+.connect{
+    text-align: center;
+}
+.connect h1{
+    font-size: 42px;
+}
+.connect a{
+    padding-top: 25px;
+    padding-bottom: 25px;
+    text-decoration: none;
+    color: #EBFE96;
+    font-size: 30px;
+    display: block;
+}
+@media only screen and (max-width: 600px) {
     .works-col button:hover .proj-cover{
         display: none;
     }
     .works-col button span{
         display: block;
         text-align: left;
+        font-size: 22px;
     }
     .header-text h1{
-        font-size: 34px;
+        font-size: 32px;
     }
     #pd:hover::after{
         transform: scaleY(17);
     }
     .header-subtext p{
-        width: 400px;
+        width: 350px;
+    }
+    .about-col1{
+        display: none;
+    }
+    .about-col2{
+        width: 600px;
+    }
+    #about .container .row{
+        padding: 0px 30px;
+    }
+    .about-col2 span, .about-col2 p{
+        width: 500px;
+        font-size: 28px;
     }
 }
