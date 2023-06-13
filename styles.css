@@ -73,6 +73,51 @@ nav ul li a:hover{
     letter-spacing: -0.5px;
     line-height: 1.35;
 }
+#bg-cont svg{
+    display: inline-block;
+    padding-top: 100px;
+    margin-right: 100px;
+    width: auto;
+    height: auto;
+}
+#eyeball-1{
+    /*HOVER OFF*/
+    transform: scaleX(0.9091);
+    transition: 0.6s ease;
+    
+}
+#eyeball-2{
+    /*HOVER OFF*/
+    transform: scaleX(0.952);
+    transition: 0.6s ease;
+    
+}
+#svg:hover #eyeball-1{
+    /*HOVER ON*/
+    transform: scaleX(1.1);
+    transition: 0.5s ease;
+}
+#svg:hover #eyeball-2{
+    transform: scaleX(1.01);
+    transition: 0.5s ease;
+}
+#brow-1{
+    transform: translateY(0.5rem);
+    transition: 0.6s ease;
+}
+#svg:hover #brow-1{
+    transform: translateY(-0.5rem);
+    transition: 0.6s ease;
+}
+#brow-2{
+    transform: translateY(0.5rem);
+    transition: 0.6s ease;
+}
+#svg:hover #brow-2{
+    transform: translateY(-0.5rem);
+    transition: 0.6s ease;
+}
+
 #pd {
     color: #262626;
     position: relative;
@@ -139,7 +184,7 @@ nav ul li a:hover{
     padding: 70px 0px;
     margin: 0 auto;
     display: block;
-    width: 90vw;
+    width: 90%;
 }
 .works-col button{
     background-color: #F4F1EB;
@@ -207,8 +252,8 @@ nav ul li a:hover{
     }
 }
 #about{
-    padding: 100px 0px;
-    width: 100vw;
+    padding: 70px 0px;
+    width: 110%;
     height: auto;
     background-color: #2C2C2C;
     color: #EBFE96;
@@ -251,7 +296,7 @@ nav ul li a:hover{
     width: 30vw;
     font-size: 20px;
     font-weight: thin;
-    line-height: 1.35;
+    line-height: 1.25;
 }
 .about-col2 p{
     width: 30vw;
@@ -262,6 +307,7 @@ hr{
     margin: -10px;
 }
 .connect{
+    padding-top: 20px;
     text-align: center;
 }
 .connect h1{
@@ -297,13 +343,13 @@ hr{
         display: none;
     }
     .about-col2{
-        width: 600px;
+        flex-basis: 100%;
     }
     #about .container .row{
         padding: 0px 30px;
     }
     .about-col2 span, .about-col2 p{
-        width: 500px;
-        font-size: 28px;
+        width: 100%;
+        font-size: 26px;
     }
 }
