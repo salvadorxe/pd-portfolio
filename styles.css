@@ -1,33 +1,32 @@
 *{
-    font-family: 'Raleway', sans-serif;
-    letter-spacing: -1px;
+    font-family: 'Montserrat', sans-serif;
+}
+html{
+    scroll-behavior: smooth;
 }
 body{
-    max-width: 100%;
+    margin: 0;
     background-color: #F4F1EB;
     color: #262626;
     overflow-x: hidden;
 }
-.logo{
-    height: 35px;
-    width: 90px;
-    padding-left: 15px;
+nav #logo{
+    color: #262626;
+    text-decoration: none;
+    font-size: 18px;
+    letter-spacing: -1.5px;
+    padding-left: 20px;
+    font-weight: 600;
 }
+
 nav{
     display: flex;
     align-items: center;
     justify-content: space-between;
-    margin: -10px;
-    padding: 0px 10px;
     white-space:nowrap;
-
 }
 nav ul{
     padding-right: 50px;
-}
-#header .container{
-    margin-bottom: 100px;
-    flex-basis: 10%;
 }
 nav ul li{
     display: inline-block;
@@ -47,38 +46,38 @@ nav ul li a:hover{
     color:#EB5160;
     transition: 0.3s;
 }
-
-.header-text{
-    margin-top: 200px;
-    width: 50vw;
-    padding: 10px 20px;
+#header{
+    margin-bottom: 200px;
+}
+.header-row{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin-top: 100px;
+}
+.hero{
+    margin-left: 75px;
+    margin-top: 50px;
     white-space: nowrap;
+    flex-basis: 45%;
+}
+.header-text{
+    padding-top: 60px;
+}
+#alt{
+    display: none;
 }
 .header-text span {
     color: #EB5160;
 }
 .header-text h1 {
-    font-size: 50px;
+    font-size: 48px;
     margin: 0px 0px;
-    letter-spacing: -1px;
-    padding: 1px;
+    letter-spacing: -1.5px;
 }
-.header-subtext{
-    margin-top: 25px;
-    width: 500px;
-    padding: 0px 20px;
-}
-.header-subtext p{
-    width: 550px;
-    letter-spacing: -0.5px;
-    line-height: 1.35;
-}
-#bg-cont svg{
-    display: inline-block;
-    padding-top: 100px;
-    margin-right: 100px;
-    width: auto;
-    height: auto;
+#bg-cont{
+    width: 300px;
+    margin: 20px auto;
 }
 #eyeball-1{
     /*HOVER OFF*/
@@ -146,19 +145,17 @@ nav ul li a:hover{
 
 #works{
     height: auto;
-    padding: 100px 0px;
+    margin: 100px 0px;
 }
 
 #works .sec-header{
     white-space: nowrap;
-    padding-bottom: 50px;
 }
 
 #works .sec-header p{
-    font-size: 42px;
+    font-size: 34px;
     color:#262626;
-    font-weight: bold;
-    margin-bottom: 0;
+    font-weight: 600;
 }
 
 #works .anim{
@@ -177,13 +174,12 @@ nav ul li a:hover{
     font-style: italic;
     letter-spacing: 1.25px;
     color: #EB5160;
+    font-size: 18px;
 }
 
 .works-col{
     white-space: nowrap;
-    padding: 70px 0px;
-    margin: 0 auto;
-    display: block;
+    margin: 200px auto;
     width: 90%;
 }
 .works-col button{
@@ -191,7 +187,7 @@ nav ul li a:hover{
     height: 80px;
     width: 100%;
     border: 1px solid #450920;
-    margin-bottom: 10px;
+    margin-bottom: 15px;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -215,9 +211,7 @@ nav ul li a:hover{
     color: #EB5160;
     margin: 0px 30px;
     font-weight:lighter;
-    font-size: 25px;
-    max-width: 200px;
-    display: inline-block;
+    font-size: 22px;
 }
 
 .works-col button span #pr-name{
@@ -252,13 +246,11 @@ nav ul li a:hover{
     }
 }
 #about{
-    padding: 70px 0px;
-    width: 110%;
+    padding: 75px 0px;
+    width: 100%;
     height: auto;
     background-color: #2C2C2C;
     color: #EBFE96;
-    margin: -10px;
-    
 }
 #about .container .row{
     padding: 0px 100px;
@@ -267,7 +259,6 @@ nav ul li a:hover{
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
-    
 }
 .about-col1{
     flex-basis: 45%;
@@ -282,62 +273,73 @@ nav ul li a:hover{
 }
 .sub-title{
     margin-top: 50px;
-    margin-bottom: 50px;
-    font-size: 42px;
+    margin-bottom: 25px;
+    font-size: 34px;
 }
 .about-col2{
     text-align: left;
     width: 500px;
     height: 500px;
-    flex-basis: 50%;
+    flex-basis: 45%;
 }
 .about-col2 span{
     display: inline-block;
     width: 30vw;
-    font-size: 20px;
+    font-size: 18px;
     font-weight: thin;
     line-height: 1.25;
 }
 .about-col2 p{
     width: 30vw;
-    font-size: 20px;
-}
-hr{
-    border-top: .5px solid #450920;
-    margin: -10px;
+    font-size: 18px;
 }
 .connect{
     padding-top: 20px;
     text-align: center;
 }
 .connect h1{
-    font-size: 42px;
+    font-size: 34px;
 }
 .connect a{
     padding-top: 25px;
     padding-bottom: 25px;
     text-decoration: none;
     color: #EBFE96;
-    font-size: 30px;
+    font-size: 22px;
     display: block;
 }
 @media only screen and (max-width: 600px) {
+    nav ul li a{
+        display: none;
+    }
     .works-col button:hover .proj-cover{
         display: none;
     }
     .works-col button span{
         display: block;
         text-align: left;
-        font-size: 22px;
+        font-size: 20px;
     }
     .header-text h1{
-        font-size: 32px;
+        display: none;
+    }
+    #alt{
+        font-size:68px;
+        font-weight: 700;
+        letter-spacing: -1.5px;
+        display: block;
+        margin-bottom: -25px;
+    }
+    .hero{
+        margin-left: 20px;
+        margin-top: -100px;
+        width: 100%;
+        text-align: left;
+        flex-basis: 0%;
+        white-space: pre-line;
     }
     #pd:hover::after{
         transform: scaleY(17);
-    }
-    .header-subtext p{
-        width: 350px;
     }
     .about-col1{
         display: none;
@@ -350,6 +352,73 @@ hr{
     }
     .about-col2 span, .about-col2 p{
         width: 100%;
-        font-size: 26px;
+        font-size: 25px;
     }
+    #bg-cont{
+        transform: scale(0.75);
+    }
+}
+
+/*Project Styling*/
+.project-title {
+    margin: 100px 20px;
+}
+.project-title span{
+    color: #262626;
+    font-size: 80px;
+    font-weight: normal;
+}
+.skills{
+    margin: 35px 0px;
+}
+.skills span{
+    margin-bottom: 15px;
+    margin-right: 10px;
+    display: inline-block;
+    font-size: 18px;
+    padding: 7px 7px;
+    border-radius: 100px;
+    border: 1px solid #450920;
+}
+.proj-desc{
+    margin: 35px 0px;
+}
+.proj-desc #sum{
+    font-size: 18px;
+}
+.header-image{
+    height: 350px;
+    padding: 0;
+}
+#expand {
+    margin-top: 200px;
+    background: #dc143c;
+    min-height: 50%;
+    min-width: 20%;
+    position: relative;
+    max-height: 100%;
+}
+.proj-row{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin: 0px 100px;
+}
+.prob{
+    flex-basis: 45%;
+}
+.sol{
+    flex-basis: 45%;
+}
+
+.prob h1, .sol h1{
+    color: #262626;
+}
+.prob span, .sol span{
+    letter-spacing: -0.5px;
+    line-height: 30px;
+    color: #262626;
+    font-size: 18px;
+    display: inline-block;
+    width: 450px;
 }

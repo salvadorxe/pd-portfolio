@@ -8,29 +8,30 @@
     <link rel="icon" type="image" href="/images/icon.png">
     <link rel="stylesheet" href="styles.css">
     <style>
-      @import url('https://fonts.googleapis.com/css2?family=Raleway:wght@100;300;400;700;800&display=swap');
+      @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@200;300;400;500;600;700;800;900&display=swap');
     </style>
   </head>
   <body>
     <!--header=home page-->
     <div id="header">
         <div class="container">
-          <nav id>
-              <img src="images/logo.png" class="logo">
+          <nav>
+              <a id="logo" href="index.html">Salvador Antonio</a>
               <ul>
-                  <li><a href="#">Home</a></li>
-                  <li><a href="#">Work</a></li>
-                  <li><a href="#">About</a></li>
+                  <li><a href="#home">Home</a></li>
+                  <li><a href="#works">Work</a></li>
+                  <li><a href="#about">About</a></li>
               </ul>
           </nav>
-          <div class="row">
+          <div class="header-row">
             <div class="hero">
               <div class="header-text">
+                <p id="alt">
+                  SALVADOR ANTONIO
+                  PRODUCT DESIGN
+                </p>
                 <h1>Hello, <span>I'm Salvador</span> </h1>
                 <h1>and I'm a <span id="pd">Product Designer</span></h1>
-              </div>
-              <div class="header-subtext">
-                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Doloremque eum repudiandae commodi, delectus ipsa laboriosam est nihil quibusdam molestiae beatae, suscipit, eaque facere alias perspiciatis! Quo aut natus aliquam nemo?</p>
               </div>
             </div>
             <div id="bg-cont">
@@ -63,7 +64,7 @@
         </div>
         <div class="works-col">
           <span id="works-header">recent work</span>
-          <button>
+          <button onclick="window.location.href='projects.html';">
             <span>
               01 <span id="pr-name">Tripsy</span>
             </span>
@@ -108,7 +109,6 @@
             <a href="https://twitter.com/ennsalad?s=21&t=iCA6GSl_lS43xps2Y5ktQA" target="_blank">Twitter</a>
         </div>
     </div>
-    
 	  <script src="index.js"></script>
   </body>
 </html>
